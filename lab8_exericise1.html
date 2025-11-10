@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile Form</title>
+  <link rel="stylesheet" href="lab8_exercise1.css" />
+  <script src="lab8_exercise1.js" defer></script> 
+</head>
+<body>
+  <h2>Create Your Profile</h2>
+  <form id="profileForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required />
+    <div class="error" id="name_md"></div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <div class="error" id="email_md"></div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" required />
+    <div class="error" id="age_md"></div>
+    <label for="bio">Bio (optional):</label>
+    <textarea id="bio" maxlength="200" rows="3"></textarea>
+    <label>
+      <input type="checkbox" id="newsletter" /> Subscribe to newsletter
+    </label>
+    <button type="submit">Create Profile</button>
+  </form>
+<div id="result"></div>
+</body>
+</html>
