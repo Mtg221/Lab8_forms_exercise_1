@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <h1>🍕 Pizza Order Form</h1>
+  <form id="orderForm" action="confirmation.html" method="get">
+    <label>
+      Customer Name:
+      <input type="text" name="name" required minlength="3">
+    </label>
+    <label>
+      Pizza Type:
+      <select name="type" required>
+        <option value="Margherita">Margherita</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Hawaiian">Hawaiian</option>
+        <option value="Vegetarian">Vegetarian</option>
+      </select>
+    </label>
+    <label>Size:</label>
+    <label><input type="radio" name="size" value="Small" data-price="8" required> Small ($8)</label>
+    <label><input type="radio" name="size" value="Medium" data-price="12"> Medium ($12)</label>
+    <label><input type="radio" name="size" value="Large" data-price="16"> Large ($16)</label>
+    <label>Toppings:</label>
+    <label><input type="checkbox" name="toppings" value="Extra Cheese" data-price="2"> Extra Cheese ($2)</label>
+    <label><input type="checkbox" name="toppings" value="Mushrooms" data-price="1.5"> Mushrooms ($1.50)</label>
+    <label><input type="checkbox" name="toppings" value="Olives" data-price="1.5"> Olives ($1.50)</label>
+    <label><input type="checkbox" name="toppings" value="Peppers" data-price="1"> Peppers ($1)</label>
+    <label>
+      Quantity:
+      <input type="number" name="quantity" min="1" max="10" value="1" required>
+    </label>
+
+    <label>
+      Delivery Instructions:
+      <textarea name="instructions" maxlength="200" placeholder="Optional"></textarea>
+    </label>
+    <button type="submit">Confirm Order</button>
+  </form>
+ </body>
+</html>
